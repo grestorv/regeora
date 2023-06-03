@@ -4,7 +4,7 @@
 namespace App\Repositories\Interfaces;
 
 
-class PatientRepositoryInterface
+interface PatientRepositoryInterface
 {
-
+    public function all();
 }

@@ -13,11 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/1', function () {
-    return "111";
-});
-
-Route::get('/patient', 'PatientController@index');
+Route::post('api/patient/add', 'PatientController@create');
+Route::get('api/patient/all', 'PatientController@index');
